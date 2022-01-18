@@ -1,0 +1,192 @@
+[
+    {
+        "name": "setChannel",
+        "embed": {
+            "title": "Set Channel Help",
+            "description": "Leveling allows you to set a channel to announce member level ups. If not set messages will be sent in the channel of which the members message that resulted in the level up came from.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage", 
+                    "value": "`/levels [Choice: Set Channel] [Data: channel-id]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining The Channel's ID",
+                    "value": ">>> You can obtain the channel's ID by long pressing (mobile) or right clicking (web client) on the channel in the sidebar and pressing 'Copy ID'. \n\nAlternatively, you can also mention the channel in a message and before sending, place a `\\` infront of the mention (i.e.: `\\#channel-mention`). It will return the channel mention as `<#channel-id>`. You can just copy the numbers portion and send that in the data field.",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "setImage",
+        "embed": {
+            "title": "Set Image Help",
+            "description": "Each server can by default set their own image background for the rank card.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Set Image] [Data: image-link]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining a link",
+                    "value": ">>> Discord uses a CDN system through cloudflare. This system allows users to upload file that discord then temporarily stores to receive a link that they can embed onto their platform. \n\nYou can upload your image to a private channel or a direct message. Once you have uploaded your image to Discord, you can right click it, or press and hold on it and select 'Copy Image Address'. Send that copied address in the data field and you are all set!",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "setXpEarned",
+        "embed": {
+            "title": "Xp Earned Help",
+            "description": "Xp Earned is the amount of XP a user can earn for ever message they send. Default: `5xp`/message",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice XP Earned] [Data: Number]`",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "setBaseXp",
+        "embed": {
+            "title": "Base XP Help",
+            "description": "Base XP is the amount of XP a use needs to get to reach level 2. Base XP will also be used to determine what amount of XP will be required to earn subsequent levels after level 2. Using a very simple math equation. Default: 500xp",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Base XP] [Data: Number]`",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "setMessage",
+        "embed": {
+            "title": "Set Message Help",
+            "description": "You can set a custom level up message for your server. When members level up this message will be sent notifying them of their leveling up.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Set Message] [Data: your-message]`",
+                    "inline": false
+                },
+                {
+                    "name": "Placeholders",
+                    "value": "You can set placeholders in your message to alert the bot to change the placeholder with a bit of code. Usually these are mentioned member, etc. \n\n**Current Placeholders: \n>>> `{userMention}` - *Mentions the member* \n`{userTag}` - *Provides the user's tag (i.e: Wumpus#0001)* \n`{userLevel}` - *Display their new level* \n`{totalXP}` - *Display a members total XP earned*",
+                    "inline": false
+                },
+                {
+                    "name": "Example Message",
+                    "value": "Good Job {userMention}! You have reached level {userLevel}! All your chatting so far has earned you {totalXP}xp!",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "setMilestone",
+        "embed": {
+            "title": "Set Milestone Help",
+            "description": "Much like other leveling systems you have the opportunity to reward your members for reaching certain levels.Server owners and Administrators can set roles that users obtain when they reach set levels. There are no predetermined levels, you can define those milestones for yourself.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Set Milestone] [Data: \"level - role-id\"]`",
+                    "inline": false
+                },
+                {
+                    "name": "Formatting Data",
+                    "value": "Data Field must be level as a number an the role id seperated by a `-`. (Example: 5 - 3538783213624684689) => role with id: 3538783213624684689 to be awarded when a user reaches level 5",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "setIgnored",
+        "embed": {
+            "title":"Set Ignore Help",
+            "description":"Have a bot commands channel or spam channel? Don't want members to earn XP in those channels? We can do that! Ignore is the system that allows you to store channels that members cant earn XP in.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Set Ignored] [Data: channel-id]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining Channel IDs",
+                    "value": ">>> You can obtain the channel's ID by long pressing (mobile) or right clicking (web client) on the channel in the sidebar and pressing 'Copy ID'. \n\nAlternatively, you can also mention the channel in a message and before sending, place a `\\` infront of the mention (i.e.: `\\#channel-mention`). It will return the channel mention as `<#channel-id>`. You can just copy the numbers portion and send that in the data field.",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "removeIgnored",
+        "embed": {
+            "title": "Remove Ignore Help",
+            "description":"What kind of bot would this be if things weren't reversible. If you can ignore a channel, you can unignore it. This system works exactly the same as `Set Ignore` except in reverse.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Remove Ignored] [Data: channel-id]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining Channel IDs",
+                    "value": ">>> You can obtain the channel's ID by long pressing (mobile) or right clicking (web client) on the channel in the sidebar and pressing 'Copy ID'. \n\nAlternatively, you can also mention the channel in a message and before sending, place a `\\` infront of the mention (i.e.: `\\#channel-mention`). It will return the channel mention as `<#channel-id>`. You can just copy the numbers portion and send that in the data field.",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "removeMilestone",
+        "embed": {
+            "title": "Remove Milestone Help",
+            "description": "Just like you can add a milestone to award members when they reach it, you can remove it from the system too. This works exactly like `Set Milestone` except in reverse.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/levels [Choice: Remove Milestone] [Data: level]`",
+                    "inline": false
+                },
+                {
+                    "name": "Formatting Data",
+                    "value": "Say we have our level system set to award a role for every level gained, but we want to do multiples of 5 instead. You can send: \n> `/levels [Choice: Remove Milestone] [Data: 4]` which will remove the milestone that is stored for level 4. Alternatively, If you want to start from scratch you can send `all` in the data field and erase all milestones.",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "toggle",
+        "embed": {
+            "title": "Toggle On/Off Help",
+            "description": "Turns leveling system on / off for this server. \n\nIn the `data` field type: \n> `on` - *Enables the welcome system* \n> `off` - *Disables the welcome system*",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage", 
+                    "value": "> To Enable: `/levels [Choice: Toggle On/Off] [Data: 'on']` \n> To Disable`/levels [Choice: Toggle On/Off] [Data: 'off']`",
+                    "inline": false
+                }
+            ]
+        }
+    }
+]

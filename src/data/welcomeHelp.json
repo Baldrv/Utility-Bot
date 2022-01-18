@@ -1,0 +1,117 @@
+[
+    {
+        "name": "image",
+        "embed": {
+            "title": "Welcome Image Help",
+            "description": "Servers can set custom images for welcome messages! However, `Data` must be a link to the image.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/welcome [Choice: Set Image] [Data: Image Link]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining a link",
+                    "value": ">>> Discord uses a CDN system through cloudflare. This system allows users to upload file that discord then temporarily stores to receive a link that they can embed onto their platform. \n\nYou can upload your image to a private channel or a direct message. Once you have uploaded your image to Discord, you can right click it, or press and hold on it and select 'Copy Image Address'. Send that copied address in the data field and you are all set!",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "message",
+        "embed": {
+            "title": "Welcome Message Help",
+            "description": "Welcome messages are customisable using many placeholder options.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/welcome [Choice: Set Message] [Data: Your Message]`",
+                    "inline": false
+                },
+                {
+                    "name": "Place Holders",
+                    "value": "Place holders tell the bot to insert a portion of programming into the message. \n\n**The current placeholders are:** \n> `{userMention}` - *Mentions the new user within your welcome message* \n> `{userTag}` - *Provides the user's tag (I.E.: Wumpus#0001) in the message.* \n> `{memberCount}` - *Provides the member count for your server in the message* \n> `{server}` - *Provides the name for your server in the message* \n\nAll placeholders will automatically update when you change information such as server name, or you gain/lose members. There is no limit to how many placeholders you can have in message. However, it is recommended that you use one of the two user placeholders at a time.",
+                    "inline": false
+                },
+                {
+                    "name": "Example Message",
+                    "value": "Welcome {userMention} to {server}. You are member #{memberCount}",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "color",
+        "embed": {
+            "title": "Color Help",
+            "description": "Set a custom color for your welcome embed.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/welcome [Choice: Color] [Data: color as Hex]`",
+                    "inline": false
+                },
+                {
+                    "name": "Additional Info",
+                    "value": "Colors must be an accepted discord color string, or a HexColor string. \n\n**Note:** You can get a HexColor string from the role settings where you choose the color. It will be the code of letters and numbers following the hastag(#)",
+                    "inline": false
+                },
+                {
+                    "name": "Accepted Discord Colors",
+                    "value": "DEFAULT (black), \nAQUA, \nDARK_AQUA, \nGREEN, \nDARK_GREEN, \nBLUE, \nDARK_BLUE, \nPURPLE",
+                    "inline": true
+                },
+                {
+                    "name": "\u200b",
+                    "value": "DARK_PURPLE, \nLUMINOUS_VIVID_PINK, \nDARK_VIVID_PINK, GOLD, \nDARK_GOLD, \nORANGE, \nDARK_ORANGE, \nRED, \nDARK_RED",
+                    "inline": true
+                },
+                {
+                    "name": "\u200b",
+                    "value": "GREY, \nDARK_GREY, \nDARKER_GREY, \nLIGHT_GREY, \nNAVY, \nDARK_NAVY, \nYELLOW",
+                    "inline": true
+                }
+            ]
+        }
+    },
+    {
+        "name": "toggle",
+        "embed": {
+            "title": "Toggle On/Off Help",
+            "description": "To enable or disable your welcome system, its pretty straight forward. \n\nIn the `data` field type: \n> `on` - *Enables the welcome system* \n> `off` - *Disables the welcome system*",
+            "color":"DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage", 
+                    "value": "> To Enable: `/welcome [Choice: Toggle On/Off] [Data: 'on']` \n> To Disable`/welcome [Choice: Toggle On/Off] [Data: 'off']`",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "channel",
+        "embed": {
+            "title": "Set Channel Help",
+            "description": "Stores the channel to send welcome messages in.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/welcome [Choice: Set Channel] [Data: channel-id]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining Channel IDs",
+                    "value": ">>> You can obtain the channel's ID by long pressing (mobile) or right clicking (web client) on the channel in the sidebar and pressing 'Copy ID'. \n\nAlternatively, you can also mention the channel in a message and before sending, place a `\\` infront of the mention (i.e.: `\\#channel-mention`). It will return the channel mention as `<#channel-id>`. You can just copy the numbers portion and send that in the data field.",
+                    "inline": false
+                }
+            ]
+        }
+    }
+]

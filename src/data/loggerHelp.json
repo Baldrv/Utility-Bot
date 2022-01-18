@@ -1,0 +1,37 @@
+[
+    {
+        "name": "channel",
+        "embed": {
+            "title": "Set Channel Help",
+            "description": "Sets a channel for logging important information to.",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "`/logging [Choice: Set Channel] [Data: channel-id]`",
+                    "inline": false
+                },
+                {
+                    "name": "Obtaining The Channel's ID",
+                    "value": ">>> You can obtain the channel's ID by long pressing (mobile) or right clicking (web client) on the channel in the sidebar and pressing 'Copy ID'. \n\nAlternatively, you can also mention the channel in a message and before sending, place a `\\` infront of the mention (i.e.: `\\#channel-mention`). It will return the channel mention as `<#channel-id>`. You can just copy the numbers portion and send that in the data field.",
+                    "inline": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "toggle",
+        "embed": {
+            "title": "Toggle On/Off Help",
+            "description": "To enable or disable the logging system, its pretty straight forward. \n\nIn the `data` field type: \n> `on` - *Enables the logging system* \n> `off` - *Disables the logging system*",
+            "color": "DEFAULT",
+            "fields": [
+                {
+                    "name": "Usage",
+                    "value": "> To Enable: `/logging [Choice: Toggle On/Off] [Data: 'on']` \n> To Disable`/logging [Choice: Toggle On/Off] [Data: 'off']`",
+                    "inline": false
+                }
+            ]
+        }
+    }
+]
